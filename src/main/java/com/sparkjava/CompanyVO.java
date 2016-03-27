@@ -1,6 +1,6 @@
 package com.sparkjava;
 
-public class CompanyDAO
+public class CompanyVO
 {
 	private String name;
 	private String website;

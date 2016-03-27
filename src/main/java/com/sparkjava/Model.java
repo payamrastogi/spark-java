@@ -11,12 +11,12 @@ import lombok.Data;
 public class Model 
 {
 	private int nextId = 1;
-    private Map<String, UserDAO> users = new HashMap<>();
+    private Map<String, UserVO> users = new HashMap<>();
     
     public String createUser(UserPayload userPayload)
     {
         String id = (nextId++)+"";
-        UserDAO userDAO = new UserDAO();
+        UserVO userDAO = new UserVO();
         userDAO.setId(id);
         userDAO.setFirstName(userPayload.getFirstName());
         userDAO.setLastName(userPayload.getLastName());

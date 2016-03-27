@@ -1,6 +1,6 @@
 package com.sparkjava;
 
-public class AddressDAO 
+public class AddressVO 
 {
 	private String street;
 	private String city;

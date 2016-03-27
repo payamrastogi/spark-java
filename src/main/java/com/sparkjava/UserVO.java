@@ -2,14 +2,14 @@ package com.sparkjava;
 
 import java.util.Date;
 
-public class UserDAO 
+public class UserVO
 {
 	private String id;
 	private String firstName;
 	private String lastName;
 	private String email;
-	private AddressDAO address;
-	private CompanyDAO company;
+	private AddressVO address;
+	private CompanyVO company;
 	private Date dateCreated;
 	private String profilePic;
 	
@@ -37,16 +37,16 @@ public class UserDAO
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public AddressDAO getAddress() {
+	public AddressVO getAddress() {
 		return address;
 	}
-	public void setAddress(AddressDAO address) {
+	public void setAddress(AddressVO address) {
 		this.address = address;
 	}
-	public CompanyDAO getCompany() {
+	public CompanyVO getCompany() {
 		return company;
 	}
-	public void setCompany(CompanyDAO company) {
+	public void setCompany(CompanyVO company) {
 		this.company = company;
 	}
 	public Date getDateCreated() {
